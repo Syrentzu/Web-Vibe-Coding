@@ -29,7 +29,7 @@ export const portfolioData = {
       id: 1,
       institution: "Institut Teknologi Adhi Tama Surabaya (ITATS)",
       degree: "Bachelor of Computer Science (S1 Teknik Informatika)",
-      timeline: "Semester 2 - Present",
+      timeline: "2024 - Present",
       details: "Focusing on core software engineering, data structures, and advanced systems."
     },
     {
