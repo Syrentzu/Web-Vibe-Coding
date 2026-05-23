@@ -9,7 +9,7 @@ export const portfolioData = {
     githubUrl: "https://github.com/Syrentzu",
     linkedin: "tegar-ramdhani-458422240",
     linkedinUrl: "https://www.linkedin.com/in/tegar-ramdhani-458422240",
-    avatarUrl: "/src/assets/IMG_20250903_013342.jpg",
+    avatarUrl: "/IMG_20250903_013342.jpg",
     statusBadge: "Open to Projects & Collaborations",
     bio: "An Information Technology student at ITATS who bridges the gap between technical architecture and modern visual aesthetics. Driven by the 'Vibe Coding' methodology—maximizing cutting-edge AI tools to build ultra-fast, clean, and interactive web applications without unnecessary boilerplate overhead."
   },
