@@ -26,6 +26,27 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     document.title = profile.pageTitle || "Tegar - The Beginner Vibe Coder";
   }, [profile.pageTitle]);
 
+  // Global Hash Scroll Listener for client-side routing transitions
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.replace('#', '');
+      const attemptScroll = () => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }, 120); // Delay for components to mount fully
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        attemptScroll();
+      } else {
+        window.addEventListener('load', attemptScroll, { once: true });
+      }
+    }
+  }, [location.pathname, location.hash]);
+
   // Section Observer for active sticky indicators on the home page
   useEffect(() => {
     if (location.pathname !== '/') {
